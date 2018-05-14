@@ -6,10 +6,10 @@
 
 1주차 OT : 서로 인사 나누기 및 팀장 결정 (1-2시간 예상)
 
-https://youtu.be/1Ah9d8QShOQ
-https://youtu.be/l3UodQuo7sc
-https://youtu.be/zwzDf6VIFE8
-https://youtu.be/VR5s_PmW3-E
+https://youtu.be/1Ah9d8QShOQ<br>
+https://youtu.be/l3UodQuo7sc<br>
+https://youtu.be/zwzDf6VIFE8<br>
+https://youtu.be/VR5s_PmW3-E<br>
 http://www.edwith.org/boostcourse-web
 
 01. Hello! Full-Stack Web Developer! 
