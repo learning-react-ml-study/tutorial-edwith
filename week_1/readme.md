@@ -9,19 +9,15 @@
 https://youtu.be/1Ah9d8QShOQ<br>
 https://youtu.be/l3UodQuo7sc<br>
 https://youtu.be/zwzDf6VIFE8<br>
-https://youtu.be/VR5s_PmW3-E<br>
-
+https://youtu.be/VR5s_PmW3-E
 
 http://www.edwith.org/boostcourse-web
 
-01. Hello! Full-Stack Web Developer! 
-http://www.edwith.org/boostcourse-web/lecture/23922/
+1. Web개발의 이해 - FE/BE
 
-02. 개발 이야기
-http://www.edwith.org/boostcourse-web/lecture/23923/
-
-03. 시작합니다!(이건 안해도 됩니다.)
-http://www.edwith.org/boostcourse-web/lecture/23924/
-
-0. Hello! 웹 프로그래밍 기초 소개
-http://www.edwith.org/boostcourse-web/lecture/16667/
+1) 웹 프로그래밍을 위한 프로그램 언어들 
+http://www.edwith.org/boostcourse-web/lecture/16660/<br>
+2) 웹의 동작 (HTTP 프로토콜 이해) 
+http://www.edwith.org/boostcourse-web/lecture/16661/<br>
+3) 웹 Front-End 와 웹 Back-End
+http://www.edwith.org/boostcourse-web/lecture/16662/
