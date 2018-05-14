@@ -13,11 +13,11 @@ https://youtu.be/VR5s_PmW3-E
 
 http://www.edwith.org/boostcourse-web
 
-1. Web개발의 이해 - FE/BE
+### Web개발의 이해 - FE/BE
 
-1) 웹 프로그래밍을 위한 프로그램 언어들 
+#### 웹 프로그래밍을 위한 프로그램 언어들 
 http://www.edwith.org/boostcourse-web/lecture/16660/<br>
-2) 웹의 동작 (HTTP 프로토콜 이해) 
+#### 웹의 동작 (HTTP 프로토콜 이해) 
 http://www.edwith.org/boostcourse-web/lecture/16661/<br>
-3) 웹 Front-End 와 웹 Back-End
+#### 웹 Front-End 와 웹 Back-End
 http://www.edwith.org/boostcourse-web/lecture/16662/
