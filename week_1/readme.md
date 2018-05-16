@@ -5,7 +5,7 @@
 모임전에 설치해야할 것 : 자기에게 적합한 텍스트에디터, 깃(+ 소스트리), 크롬(개발자도구&확장프로그램 등)
 
 ## 1주차 OT : 서로 인사 나누기 및 팀장 결정 (1-2시간 예상)
-
+ㅈ
 https://youtu.be/1Ah9d8QShOQ<br>
 https://youtu.be/l3UodQuo7sc<br>
 https://youtu.be/zwzDf6VIFE8<br>
