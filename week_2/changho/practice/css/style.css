@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:#120e66;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.container > div, h1 {
+    margin: 2rem auto;
+}
