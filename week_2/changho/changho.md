@@ -96,3 +96,4 @@ HTML 파싱의 특징은 오류를 허용하고 파싱 도중에 문서 수정�
 렌더링 엔진 별로 플로우는 조금 씩 다를 수 있지만 기본적인 메인 플로우는 같다고 할 수있다. 
 
 
+출처: edwith.org, [naver d2](https://d2.naver.com/helloworld/59361)
