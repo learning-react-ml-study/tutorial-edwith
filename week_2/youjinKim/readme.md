@@ -9,11 +9,11 @@
     + Source : 왼쪽 파일 관리창, 가운데 소스 데이터, 오른쪽 디버깅 관련 패널 
     + Network : static source, dynamic source(ajax) 확인 
  + https://jsfiddle.net/
-    + 웹의 프론트엔드 기술인 HTML, CSS, JavaScript를 웹에서 작성해서 바로 테스트 해볼 수 있고, 그 소스를 저장 공유할 수 있는 서비스이다.
-    + FORK 버튼은 현재의 코드를 그대로 복제하는 기능이다. 버전관리 시스템으로 치면 Branch에 해당한다.
-    + TidyUp 버튼은 소스코드의 가독성을 높여주는 기능이다.
-    + JSLint 버튼은 JSLint를 이용해서 자바스크립트의 유효성을 검사하는 기능이다.
-    + Share 버튼을 이용해서 소스코드를 공유할 수 있다. 이 중에 embed를 이용하면 아래와 같이 소스코드를 웹페이지 안에 삽입할 수도 있다.
+    + 웹의 프론트엔드 기술인 HTML, CSS, JavaScript를 웹에서 작성해서 바로 테스트 해볼 수 있고, 그 소스를 저장 공유할 수 있는 서비스
+    + FORK 버튼은 현재의 코드를 그대로 복제하는 기능이다. 버전관리 시스템으로 치면 Branch
+    + TidyUp 버튼은 소스코드의 가독성을 높여주는 기능
+    + JSLint 버튼은 JSLint를 이용해서 자바스크립트의 유효성을 검사하는 기능
+    + Share 버튼을 이용해서 소스코드를 공유할 수 있다. 이 중에 embed를 이용하면 아래와 같이 소스코드를 웹페이지 안에 삽입 가능
        -  Hello world : https://jsfiddle.net/eot63art/
     + Collaborate 작업 화면을 서로 공유하면서 개발 가능하다 팀뷰어와 유사
       - https://jsfiddle.net/youjinkim/sp8htrry/
