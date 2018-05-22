@@ -4,5 +4,3 @@ Changes proposed in this pull request:
 -
 -
 -
-
-@seongjoojin
