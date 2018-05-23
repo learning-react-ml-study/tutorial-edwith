@@ -1,0 +1,2 @@
+total 0
+-rw-r--r-- 1 mingi 197121 0 5월  23 19:27 sample.txt
