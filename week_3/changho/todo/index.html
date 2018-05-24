@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo list</title>
+    <style>
+        .complete {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <form type="submit" id="todo-form">
+            <label for="tasks">NEW Todo</label>
+            <input id="input" type="text" name="todo" placeholder=" 할일을 입력하세요">
+            <div>
+                <button id="submit-btn" type="submit">Add Todo</button>
+            </div>
+       </form>
+       <div class="card-section">
+           <h3 id="task-section">TODO</h3>
+           <ul id="todo-list">
+           </ul>
+            <button class="todo-clear">Clear Todo</button>
+       </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
