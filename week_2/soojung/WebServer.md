@@ -40,7 +40,9 @@ https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84
 http://blog.celingest.com/en/2013/02/25/nginx-vs-apache-in-aws/
 <br>
 - Nginx 아키텍처 <br>
+
 ![image](https://user-images.githubusercontent.com/33097467/40548871-e87eef02-6070-11e8-86a9-569acdbbd285.png)
+
 
   * Module로 구성
   * Event-driven 이면서 비동기 방식(Asynchronous)으로 동작
