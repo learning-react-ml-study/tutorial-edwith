@@ -64,15 +64,14 @@
 - css코드는 head에 위치시켜 렌링 처리시 브라우저가 빨리 처리할 수 있도록함
 
 - meta 태그 : 브라우저에게 정보를 제공하기 위함
+
 <code>meta name="viewport" content="width=device-width,initial-scale=1"</code>
   * viewport : 모바일이나 웹 환경에서 반응형 웹을 제공하기 위함
   * initial-scale : 페이지가 처음 로드될 때 줌 레벨을 조정 속성
 <br>
 참고) https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag
-
-
-
 <br>
+
 <생각해보기>
 
   - 우리가 흔히 브라우저 탐색을 할 때 스크롤을 하거나, 어떤 것을 클릭하면서 화면의 위치를 바꿀 때, 브라우저는 어떻게 다시 화면을 그릴까요?
