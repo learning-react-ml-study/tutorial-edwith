@@ -91,7 +91,7 @@ function storeTodo(todo) {
 }
 
 function removeItem(e) {
-    
+    e.preventDefault();
     if(e.target.classList.contains('delete')) {
         e.target.parentElement.remove(); 
         // localstorage 에서 remove
