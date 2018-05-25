@@ -36,7 +36,7 @@ https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84
 
 - PC뿐 아니라 모바일/태블릿을 통해 웹 페이지를 접근하는 빈도가 계속적으로 증가하게 되어, 웹 서버 역시 늘어난 동시 접속 수를 얼마나 잘 수용할 수 있는가가 관건
 <br>
-- 클라우드 환경에서 Nginx vs Apache 속도 비교
+- 클라우드 환경에서 Nginx vs Apache 속도 비교<br>
 http://blog.celingest.com/en/2013/02/25/nginx-vs-apache-in-aws/
 <br>
 - Nginx 아키텍처 <br>
