@@ -12,6 +12,7 @@
   
   ![3번](./img/3.png)
 - 4번 형태 사용자 설명서나 이북 형태로 콘텐츠를 제공하는 경우 사용됨.
+
   ![4번](./img/4.png)
 
 # html5 적용한 html 문서 구조 잡기 
@@ -33,4 +34,4 @@
     <footer>꼬리말</footer>
     </body>
     </html>
-! [예제](./img/temp.png)
+ ![예제](./img/temp.png)
