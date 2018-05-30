@@ -65,3 +65,7 @@ html5가 등장하여 웹표준규격에 맞는 tag들이 등장하기 전까지
 HTML5에서 새로 생긴 태그들로 `<header></header>` `<nav></nav>`, `<section></section>`, `<footer></footer>`, `<aside></aside>`태그 등이 있다. html5 이전에는 레이아웃을 잡을 때 일반적인 box  태그인 `<div></div>` 태그를 사용하였지만 html5 이후 위의 예로 든 태그들을 이용하여 각 부분들의 레이아웃을 잡고 코드를 봤을 때 쉽게 어떤 위치에 있고 어떤 역할을 하는지 더 자세하게 설명이 가능하게 되었다. 즉, 웹문서의 표준화가 더 용이해 졌다고 할 수 있다.  
 
 ## META TAG 설명 필요 
+
+## inline-block vs inline
+
+인라인은 width 및 padding 속성을 줘도 기본 박스 모델의 변하지 않지만 인라인블록은 width 값을 지정해 줄 수 있다. 
