@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            display: table;
+            clear: both;
+            content: 'dfdf';
+        }
+        div.box {
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .green {
+            float: right;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="box red">box1</div>
+        <div class="box blue">box2</div>
+        <div class="box green">box3</div>
+    </div>
+</body>
+</html>
