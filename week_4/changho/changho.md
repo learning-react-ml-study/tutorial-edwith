@@ -47,3 +47,29 @@ str.split(' ') // ["hello", "world"]
 
 ## 주요 메서드
 > 같이 코드 보면서 해여..^^
+
+### [MDN 사이트 참조](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+
+## 객체의 정의 
+
+객체는 이름-값 쌍으로 저장되는 원시 데이터(때때로 참조 데이터 타입)의 순서 없는 목록이다. 목록의 각 항목은 프로퍼티라고 불리며(함수는 메서드로 불린다), 각 프로퍼티의 이름은 유일해야 하고, 하나의 문자열 또는 숫자가 될 수 있다. 객체는 이름과 값이 있는 속성들을 포함하는 하나의 컨테이너라고 할 수 있다. 속성의 이름은 문자열이면 가능하며, 빈 문자열도 가능하다. 속성의 값은 `undefined`를 제외한 모든 값이 사용 될 수 있다.
+> 간단한 객체 
+```javascript
+var me = {
+    name: 'lee',
+    age: 'secret',
+    hobby: 'music',
+    home: null
+}
+```
+
+### 프로퍼티 
+
+
+### 메서드
+
+## 자바스크립트의 객체 구성
+
+## 객체 생성
+
+[Insanehong님 블로그 참조](http://insanehong.kr/post/javascript-object/)
