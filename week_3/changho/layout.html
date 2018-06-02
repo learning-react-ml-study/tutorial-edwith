@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout tag</title>
+    <style>
+        * {
+            border: 1px solid #080808;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            height: 100vh;
+        }
+        body > * {
+            flex: 1 100%;
+        }
+        nav {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            background-color: #11278a;
+            color: #fff;
+        }
+        nav > ul {
+            margin: 0;
+            padding: 0;
+            width: 10%;
+        }
+        
+        header {
+            background-color: #bd7516;
+        }
+        section {
+            height: auto;
+            color: #fff;
+            background-color: #223344;
+        }
+        aside {
+            background-color: #1c8a11;
+
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            background-color: #8a1125;
+        }
+        footer > div {
+            width: 32%;
+            margin: 0 auto;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>헤더 태그
+        <nav>
+            <ul>nav1</ul>
+            <ul>nav2</ul>
+            <ul>nav3</ul>
+        </nav>
+    </header>
+    <section>
+        section1
+    </section>
+    <section>section2</section>
+    <section>section3</section>
+    <aside>aside</aside>
+    <footer>
+        <div>footer1</div>
+        <div>footer2</div>
+        <div>footer3</div>
+    </footer>
+</body>
+</html>

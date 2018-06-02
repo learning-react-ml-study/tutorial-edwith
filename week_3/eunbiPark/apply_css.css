@@ -1,0 +1,12 @@
+#external p {
+	font-size: 16px;
+}
+#external .red{
+	color: red;
+}
+#external .bold{
+	font-weight: bold;
+}
+#external .big{
+	font-size: 2em;
+}
