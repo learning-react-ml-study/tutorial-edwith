@@ -33,8 +33,8 @@ function addTodo() {
         localStorage.setItem(inputText, inputText);
         document.querySelector(".todo-list").insertAdjacentHTML( 'beforeend', inputStr );
         document.getElementById("InputText").value = '';
+        location.reload();
     }
-    location.reload();
 }
 document.querySelector('.clearAllBtn').addEventListener("click",removeAll);
 function removeAll() {
