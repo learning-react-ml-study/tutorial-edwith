@@ -16,3 +16,26 @@ ES6가 현재는 많이 쓰는 ECMAScript. ES6이후 년도 별로 업데이트 
 
 환경이란 언어를 사용하는 대상
 
+# 실행방법과 실습환경
+
+html 파일 직접 실행해서 보여드리겠습니다.
+
+개발자도구 - 크롬, 파이어폭스, 사파리 등 거의 모든 브라우저에서 제공
+
+가장 잘 쓰이는 것은 크롬 개발자도구
+
+console에서 자바스크립트 간단한 것은 테스트 가능
+
+## 도구 (에디터)
+
+- atom (https://atom.io/)
+- Visual Studio Code (https://code.visualstudio.com/)
+- node++ (https://notepad-plus-plus.org/)
+- editplus (https://www.editplus.com/kr/) 유료
+- ultraedit (https://www.ultraedit.com/) 유료
+- sublime text (https://www.sublimetext.com/) 기업유료
+- bracket (http://brackets.io/) 프론트엔드만 한다면 추천
+- webstorm (https://www.jetbrains.com/webstorm/) 유료
+- eclipse (https://www.eclipse.org/downloads/)
+
+자기 입맛과 환경따라 다르게 쓰면 된다고 생각한다.
