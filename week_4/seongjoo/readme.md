@@ -78,3 +78,6 @@ result: number
     alert("coding"+" everybody");
 
 문자열 결합은 +로 가능
+
+# 변수
+
