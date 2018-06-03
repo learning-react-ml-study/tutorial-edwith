@@ -442,3 +442,56 @@ pop - 배열의 마지막 원소를 제거하는 명령
     alert(li);
     
     // 결과 : d,b,a,e,c
+    
+# 객체(Object)
+
+#### 객체의 생성
+
+방법 1
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    
+방법 2
+
+    var grades = {};
+    grades['egoing'] = 10;
+    grades['k8805'] = 6;
+    grades['sorialgi'] = 80;
+    
+방법 3
+
+    var grades = new Object();
+    grades['egoing'] = 10;
+    grades['k8805'] = 6;
+    grades['sorialgi'] = 80;
+    
+예시 1
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    alert(grades['sorialgi']);
+    
+    // 결과 : 80
+    
+예시 2
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    alert(grades.sorialgi);
+    
+    // 결과 : 80
+    
+객체 + 반복문
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    for(key in grades) {
+        document.write("key : "+key+" value : "+grades[key]+"<br />");
+    }
+    
+    /* 
+        결과
+         
+        key : egoing value : 10
+        key : k8805 value : 6
+        key : sorialgi value : 80 
+    */
+    
+http://webclub.tistory.com/243
