@@ -38,4 +38,43 @@ console에서 자바스크립트 간단한 것은 테스트 가능
 - webstorm (https://www.jetbrains.com/webstorm/) 유료
 - eclipse (https://www.eclipse.org/downloads/)
 
-자기 입맛과 환경따라 다르게 쓰면 된다고 생각한다.
+자기 입맛과 환경따라 다르게 쓰면 된다고 생각함.
+
+# 숫자와 문자
+
+자바스크립트에서는 큰 따옴표나 작은 따옴표가 붙지 않은 숫자는 숫자로 인식함
+
+    alert(1+1);
+    
+result: 2
+
+    alert(2 * 5);
+    
+result: 10
+
+    alert(6 / 2);
+    
+result: 3
+
+사칙연산도 되지만 좀 더 복잡한 연산도 가능. 자바스크립트 사전(https://opentutorials.org/course/50/39)
+
+    Math.pow(3,2); // 9
+    Math.round(10.6);   // 11
+    
+문자는 "(큰 따옴표) 혹은 '(작은 따옴표) 중 하나로 감싸야함. String 이라고 
+    
+    alert(typeof "10")
+    
+result: string
+
+    alert(typeof 10)
+    
+result: number
+
+    alert('egoing\'s javascript')
+    
+\ 뒤에 있는 기호는 단순히 문자로 해석하도록 강제할 수 있음. 이러한 기법은 이스케이프라고 함.
+	
+    alert("coding"+" everybody");
+
+문자열 결합은 +로 가능
