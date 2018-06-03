@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.new-todo {
+    display: none;
+}
+
+@media(max-width: 500px) {
+    .container {
+        margin: 1rem;
+        
+    }
+    .new-todo {
+        display: none;
+    }
+    #input {
+        display: inline-block;
+        width: 16rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+        background-color: rgb(241, 229, 213);
+        box-shadow: 0px 0px 20px grey;
+    }
+    #submit-btn {
+        display: inline-block;
+        width: 4rem;
+        height: 2rem;
+        border: 2px solid rgb(20, 20, 20)
+    }
+    #task-section {
+        width: 20rem;
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        text-align: center;
+        width: 20rem;
+        height: 2rem;
+        border: 1px solid rgb(28, 31, 30);
+    }
+    .delete {
+        float: right;
+        border: 1px solid rgb(28, 31, 30);
+        height: 100%;
+    }
+    
+}
