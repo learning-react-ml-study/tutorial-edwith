@@ -325,3 +325,173 @@ for (초기화; 반복조건; 반복이 될 때마다 실행되는 코드){
         }   
     }
     numbering();
+    
+# 배열
+
+배열(array) - 연관된 데이터를 모아서 통으로 관리하기 위해서 사용하는 데이터 타입
+
+변수가 하나의 데이터를 저장하기 위한 것이라면 배열은 여러 개의 데이터를 하나의 변수에 저장하기 위한 것
+
+    var member = ['egoing', 'k8805', 'sorialgi']
+    alert(member[0]);
+    alert(member[1]);
+    alert(member[2]);
+    
+결과
+
+egoing
+k8805
+sorialgi
+
+#### 배열의 사용 (배열 + 반복문)
+
+    function get_members(){
+        return ['egoing', 'k8805', 'sorialgi'];
+    }
+    members = get_members();
+    // members.length는 배열에 담긴 값의 숫자를 알려준다. 
+    for(i = 0; i < members.length; i++){
+        // members[i].toUpperCase()는 members[i]에 담긴 문자를 대문자로 변환해준다.
+        document.write(members[i].toUpperCase());   
+        document.write('<br />');
+    }
+    
+결과
+
+egoing
+k8805
+sorialgi
+
+#### 배열의 제어
+
+##### 배열의 크기
+
+    var arr = [1, 2, 3, 4, 5];
+    alert(arr.length);
+    
+결과 : 5
+
+##### 배열의 조작
+
+*추가*
+
+push - 배열 끝에 원소를 추가하는 명령
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.push('f');
+    alert(li);
+    
+    // 결과 : a,b,c,d,e,f
+    
+concat - 복수의 원소를 배열에 추가하는 명령
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li = li.concat(['f', 'g']);
+    alert(li);
+    
+    // 결과 : a,b,c,d,e,f,g
+    
+unshift - 배열의 시작점에 원소를 추가하는 명령
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.unshift('z');
+    alert(li);
+    
+    // 결과 : z,a,b,c,d,e
+    
+splice - 값을 자르거나 특정 인덱스 뒤에 값을 넣을 때 사용
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.splice(2, 0, 'B');
+    alert(li);
+    
+    // 결과 : a,b,B,c,d,e
+    
+https://opentutorials.org/course/50/110    
+    
+*제거*
+
+shift - 배열의 첫번째 원소를 제거하는 명령
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.shift();
+    alert(li);
+    
+    // 결과 : b,c,d,e
+    
+pop - 배열의 마지막 원소를 제거하는 명령
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.pop();
+    alert(li);
+    
+    // 결과 : a,b,c,d
+    
+*정렬*
+
+    var li = ['c', 'e', 'a', 'b', 'd'];
+    li.sort();
+    alert(li);
+    
+    // 결과 : a,b,c,d,e
+    
+역순으로 정렬
+
+    var li = ['c', 'e', 'a', 'b', 'd'];
+    li.reverse();
+    alert(li);
+    
+    // 결과 : d,b,a,e,c
+    
+# 객체(Object)
+
+#### 객체의 생성
+
+방법 1
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    
+방법 2
+
+    var grades = {};
+    grades['egoing'] = 10;
+    grades['k8805'] = 6;
+    grades['sorialgi'] = 80;
+    
+방법 3
+
+    var grades = new Object();
+    grades['egoing'] = 10;
+    grades['k8805'] = 6;
+    grades['sorialgi'] = 80;
+    
+예시 1
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    alert(grades['sorialgi']);
+    
+    // 결과 : 80
+    
+예시 2
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    alert(grades.sorialgi);
+    
+    // 결과 : 80
+    
+객체 + 반복문
+
+    var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+    for(key in grades) {
+        document.write("key : "+key+" value : "+grades[key]+"<br />");
+    }
+    
+    /* 
+        결과
+         
+        key : egoing value : 10
+        key : k8805 value : 6
+        key : sorialgi value : 80 
+    */
+    
+http://webclub.tistory.com/243
