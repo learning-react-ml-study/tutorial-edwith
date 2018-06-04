@@ -544,4 +544,14 @@ API - Application Programming Interface 약자. 프로그램이 동작하는 환
 
 #### 자바스크립트의 API
 
-자바스크립트 자체의 API, 자바스크립트가 동작하는 호스트 환경의 API로 구분됨
+자바스크립트 자체의 API, 자바스크립트가 동작하는 호스트 환경의 API로 구분
+
+# 정규표현식
+
+정규표현식(regular expression)은 문자열에서 특정한 문자를 찾아내는 도구
+
+#### 정규표현식 생성
+
+정규표현식은 컴파일(compile)과 실행(execution)의 두가지 단계로 나누어짐
+
+참고 : https://opentutorials.org/course/909/5142
