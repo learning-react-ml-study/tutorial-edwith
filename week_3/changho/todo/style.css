@@ -18,6 +18,7 @@ body {
     width: 80%;
     height: 100vh;
     margin: 4rem auto;
+    position: relative;
 }
 h2 {
     text-align: center;
@@ -33,7 +34,7 @@ input {
     color: #fff;
     width: 79%;
     height: 30%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 20px 25px;
 }
@@ -89,6 +90,7 @@ ul {
     font-size: 1rem;
     /* outline: none; */
     /* border: none; */
+    transition: all 0.35s ease-in-out;
 }
 .delete:hover {
     color: #fff;
@@ -110,3 +112,11 @@ ul {
     background-color: #5900ff;
 }
 
+/* footer 부분 추가 */
+
+#footer {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    margin: 4rem;
+}
