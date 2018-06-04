@@ -3,52 +3,110 @@
     padding: 0;
     box-sizing: border-box;
 }
-.new-todo {
-    display: none;
+/* 
+li  ==> class ==> todo
+span --> class --> todo-item
+button --> class --> delete
+
+*/
+body {
+    color: #fff;
+    background-color: #111;
+    -webkit-font-smoothing: antialiased;
+  }
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 4rem auto;
+}
+h2 {
+    text-align: center;
 }
 
-@media(max-width: 500px) {
-    .container {
-        margin: 1rem;
-        
-    }
-    .new-todo {
-        display: none;
-    }
-    #input {
-        display: inline-block;
-        width: 16rem;
-        height: 2rem;
-        margin-bottom: 1rem;
-        background-color: rgb(241, 229, 213);
-        box-shadow: 0px 0px 20px grey;
-    }
-    #submit-btn {
-        display: inline-block;
-        width: 4rem;
-        height: 2rem;
-        border: 2px solid rgb(20, 20, 20)
-    }
-    #task-section {
-        width: 20rem;
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-        margin-bottom: 0.8rem;
-    }
-    ul {
-        list-style: none;
-    }
-    li {
-        text-align: center;
-        width: 20rem;
-        height: 2rem;
-        border: 1px solid rgb(28, 31, 30);
-    }
-    .delete {
-        float: right;
-        border: 1px solid rgb(28, 31, 30);
-        height: 100%;
-    }
-    
+form {
+    width: 100%;
+    height: 10%;
 }
+input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    width: 79%;
+    height: 30%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px 25px;
+}
+input:focus {
+    outline: none;
+}
+#submit-btn {
+    padding: 20px 25px;
+	border:none;
+	background:rgb(231, 228, 228);
+    width: 20%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#task-section {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+.complete {
+    text-decoration: line-through;
+    color: #cccccc;
+}
+
+.todo {
+    padding: 20px 25px;
+    background: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all .25s ease-in-out; 
+}
+
+.todo:hover {
+    background: #404040;
+    cursor: pointer;
+}
+
+.delete {
+    display: block;
+    float: right;
+    height: 30%;
+    padding: 10px 10px 10px 8px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    transform: translateY(-10px); 
+    font-size: 1rem;
+    /* outline: none; */
+    /* border: none; */
+}
+.delete:hover {
+    color: #fff;
+    background-color: #bd1b1b;
+}
+
+.todo-clear {
+    transition: all 0.25s ease-in-out;
+    display: block;
+    width: 100%;
+    height: 30%;
+    padding: 20px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.todo-clear:hover {
+    color: #fff;
+    background-color: #5900ff;
+}
+
