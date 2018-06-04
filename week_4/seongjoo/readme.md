@@ -494,4 +494,64 @@ pop - 배열의 마지막 원소를 제거하는 명령
         key : sorialgi value : 80 
     */
     
-http://webclub.tistory.com/243
+참고 : http://webclub.tistory.com/243
+
+    var grades = {
+        'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+        'show' : function(){
+            for(var name in this.list){
+                document.write(name+':'+this.list[name]+"<br />");
+            }
+        }
+    };
+    grades.show();
+    
+    /*
+        결과
+        
+        egoing:10
+        k8805:6
+        sorialgi:80
+    */
+    
+객체에는 객체와 함수를 담을 수 있음
+
+# 모듈
+
+프로그램은 작고 단순한 것에서 크고 복잡한 것으로 진화함. 그 과정에서 코드의 재활용성을 높이고, 유지보수를 쉽게 할 수 있는 다양한 기법들이 사용됨.
+
+그 중 하나가 코드를 여러개의 파일로 분리하는 것. 이를 통한 효과는 아래와 같음.
+
+- 코드 재활용 가능
+- 코드를 개선하면 모든 애플케이션의 동작이 개선
+- 수정시 로직을 빠르게 찾을 수 있음
+- 메모리의 낭비 줄임
+- 동일한 로직을 로드할 때 시간과 네트워크 트래픽을 절약 할 수 있음. (브라우저만 해당)
+
+#### 라이브러리
+
+라이브러리 - 자주 사용되는 로직을 재사용하기 편리하도록 잘 정리한 일련의 코드들의 집합을 의미함.
+
+좋은 라이브러를 선택하고 잘 사용한 것은 프로그래밍의 핵심이라고 할 수 있음.
+
+# UI와 API 그리고 문서보는 법
+
+UI - User Interface
+
+API - Application Programming Interface 약자. 프로그램이 동작하는 환경을 제어하기 위해서 환경에서 제공되는 조작 장치
+
+프로그래밍을 공부하기 위한 자료 레퍼런스(reference)와 tutorial(안내서)
+
+#### 자바스크립트의 API
+
+자바스크립트 자체의 API, 자바스크립트가 동작하는 호스트 환경의 API로 구분
+
+# 정규표현식
+
+정규표현식(regular expression)은 문자열에서 특정한 문자를 찾아내는 도구
+
+#### 정규표현식 생성
+
+정규표현식은 컴파일(compile)과 실행(execution)의 두가지 단계로 나누어짐
+
+참고 : https://opentutorials.org/course/909/5142
