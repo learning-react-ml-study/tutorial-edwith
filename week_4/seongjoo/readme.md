@@ -494,4 +494,24 @@ pop - 배열의 마지막 원소를 제거하는 명령
         key : sorialgi value : 80 
     */
     
-http://webclub.tistory.com/243
+참고 : http://webclub.tistory.com/243
+
+    var grades = {
+        'list': {'egoing': 10, 'k8805': 6, 'sorialgi': 80},
+        'show' : function(){
+            for(var name in this.list){
+                document.write(name+':'+this.list[name]+"<br />");
+            }
+        }
+    };
+    grades.show();
+    
+    /*
+        결과
+        
+        egoing:10
+        k8805:6
+        sorialgi:80
+    */
+    
+객체에는 객체와 함수를 담을 수 있음
