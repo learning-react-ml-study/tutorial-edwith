@@ -11,7 +11,7 @@
 Cf) True와 false는 블린(boolean)이라고 불리는 데이터 형식
 
 ## == vs ===
-![비교 연산자](./img/1.jpg)
+![비교 연산자](./img/1.JPG)
 
 <pre>
 <code>
@@ -27,7 +27,7 @@ Cf) True와 false는 블린(boolean)이라고 불리는 데이터 형식
 </pre>
 
 ## != vs !==
-![비교 연산자_부정](./img/2.jpg)
+![비교 연산자_부정](./img/2.JPG)
 
 
 ## >
