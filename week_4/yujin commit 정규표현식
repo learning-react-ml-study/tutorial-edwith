@@ -1,0 +1,74 @@
+정규표현식: 문자열에서 특정한 문자를 찾아내는 도구
+# 정규표현식 생성단계
+1단계. 컴파일: 필요한 대상(패턴)을 찾는 것
+2단계. 실행: 찾은 대상에 어떤 작업을 하는지
+
+# 객체 만들기(찾을 대상)
+1. 정규표현식 리터럴
+var str="a"; ""를 통해 문자열임을 표명
+☞var pattern=/a/;
+
+2. 정규표현식 객체생성자
+☞var patter =new RegExp('a'); 
+
+☞:찾고자 하는 객체(a)를 패턴에 저장한다는 동일한 의미 
+
+# 정규표현식 주요한 작업
+- 추출
+- test
+- 치환
+
+1. 정보추출(execution) :인자를 받고 찾는 대상을 리턴
+var pattern=/a/;
+pattern.exec('abcd'); =>["a"] 
+☞'abcd'라는 정보에서 pattern을 찾아서 추출
+
+var pattern=/'a./; ☞a뒤에 하나의 문자가 오는 형식
+pattern.exec('abcde'); =>["ab"]
+
+pattern.exec('bcdef'); =>null
+
+2. 존재유뮤 test :검색대상의 첫번쨰 인자를 boolean값을 리턴 
+pattern.test('abcde'); =>True
+
+# 문자열 메서드 실행
+var str='abcdef'; 
+str.match(pattern); =>["a"]
+str.replace(pattern, 'A'); =>"Abcdef" 
+☞pattern값을 "A"로 변경
+
+# 옵션
+var xi=/a/; 
+"Abcde".match(xi); =>null
+var oi=/a/i; ☞대소문자 구분x
+"Abcde".match(oi); =?["A"]
+
+var xg=/a/; 
+"abcde".match(xg); =>["a"]
+var og=/a/g; ☞중복허용
+"abcde".match(og); ["a","a"]
+
+var ig=/a/ig; ☞대소문자 구분없이 a를 모두 출력
+
+# 캡쳐: 그룹을 이용해 변환
+var pattern = /(\w+)\s(\w+)/;
+(): 그룹
+\W: 문자(A~Z, a~z, 0~9)
++: 수량자(문자 하나이상)
+\s: space(공백)
+
+var str = "coding everybody";
+var result = str.replace(pattern, "$2, $1");
+=> everybody, coding
+출력순서: 2번째그룹($2) → ,공백 → 1번쨰그룹($1)
+
+3. 치환
+url해당값을 링크로 치환
+var urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim;
+var content = '생활코딩 : http://opentutorials.org/course/1 입니다. 네이버 : http://naver.com 입니다. ';
+var result = content.replace(urlPattern, function(url){
+    return '<a href="'+url+'">'+url+'</a>';
+});
+=> 생활코딩 : <a href="http://opentutorials.org/course/1">http://opentutorials.org/course/1</a> 입니다. 네이버 : <a href="http://naver.com">http://naver.com</a> 입니다.
+
+출처: 생활코딩 > 언어 > JavaScript > 
