@@ -1,5 +1,5 @@
 
-#CSS 상속, 우선 순위
+##CSS 상속, 우선 순위
 
 ```
 <!-- inline css -->
@@ -57,4 +57,5 @@
 ```
 
 **Tip1 : inline > internal > external**
+
 **Tip2 : css 는 개인적으로 잘 만들어진 언어라고 생각하진 않습니다. 제 생각에 css 는 property 잘 사용되는것들 몇개만 쓱 훓고 layout 잡는 것 연습하신다음 바로 scss 사용하길 권장합니다**
