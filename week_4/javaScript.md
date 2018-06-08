@@ -76,11 +76,11 @@ for(var i=0; i< member.length ; i++){
   alert(member[i]);
 }
 ~~~
-
+<br>
 
   * push
     + 배열 끝에 원소를 추가  
-![image](https://user-images.githubusercontent.com/33097467/41163649-3a487e94-6b74-11e8-93f4-f61e0c35409e.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41163649-3a487e94-6b74-11e8-93f4-f61e0c35409e.png)
 <br>
   * concat
     + 복수의 원소를 배열에 추가
