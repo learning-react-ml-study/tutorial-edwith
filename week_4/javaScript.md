@@ -82,32 +82,38 @@ for(var i=0; i< member.length ; i++){
     + 배열 끝에 원소를 추가  
     ![image](https://user-images.githubusercontent.com/33097467/41163649-3a487e94-6b74-11e8-93f4-f61e0c35409e.png)
 <br>
+
   * concat
     + 복수의 원소를 배열에 추가
-![image](https://user-images.githubusercontent.com/33097467/41163814-af3100c8-6b74-11e8-8c5f-11b1a250e312.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41163814-af3100c8-6b74-11e8-8c5f-11b1a250e312.png)
 <br>
-![image](https://user-images.githubusercontent.com/33097467/41163875-cd715646-6b74-11e8-8df9-0ee04f4c151a.png)
+
+  ![image](https://user-images.githubusercontent.com/33097467/41163875-cd715646-6b74-11e8-8df9-0ee04f4c151a.png)
 <br>
+
   * unshift
     + 배열의 시작점에 원소를 추가
-![image](https://user-images.githubusercontent.com/33097467/41163984-06784e68-6b75-11e8-9af4-3281b1d8aa2b.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41163984-06784e68-6b75-11e8-9af4-3281b1d8aa2b.png)
 <br>
+
   * splice
     + splice(index, howmany, element)
-    +
-![image](https://user-images.githubusercontent.com/33097467/41164040-2eda0a40-6b75-11e8-8ca8-ecf7d4dbf219.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41164040-2eda0a40-6b75-11e8-8ca8-ecf7d4dbf219.png)
 <br>
+
   * shift
     + 배열의 첫번째 원소 제거
-![image](https://user-images.githubusercontent.com/33097467/41164167-797600b8-6b75-11e8-891f-e9295839ecab.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41164167-797600b8-6b75-11e8-891f-e9295839ecab.png)
 <br>
+
   * pop  
     + 배열 끝점의 원소를 배열에서 제거
-![image](https://user-images.githubusercontent.com/33097467/41164201-9019c264-6b75-11e8-91dc-239fdb0a1a34.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41164201-9019c264-6b75-11e8-91dc-239fdb0a1a34.png)
 <br>
+
   * sort, reverse
     + 정렬, 역순으로 정렬
-![image](https://user-images.githubusercontent.com/33097467/41164663-ae1a66fa-6b76-11e8-885a-610697198b0c.png)
+    ![image](https://user-images.githubusercontent.com/33097467/41164663-ae1a66fa-6b76-11e8-885a-610697198b0c.png)
 <br>
 
 ### 객체
