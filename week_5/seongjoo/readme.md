@@ -72,3 +72,69 @@ a() // 5
 자바스크립트는 함수가 선언된 시점에서의 유효범위를 갖는다. 이러한 유효범위의 방식을 정적 유효범위(static scoping), 혹은 렉시컬(lexical scoping)이라고 함.
 
 사용될 때가 아닌 정의될 때 지역변수가 사용되게 되서 결과가 5가 나오게 됨
+
+# 값으로서의 함수와 콜백
+
+자바스크립트에서는 함수도 객체이고 일종의 값이 됩니다.
+
+객체의 속성 값으로 담겨진 함수를 메소드(method)라고함
+
+함수는 값이기 때문에 다른 함수 인자로 전달 될 수 있음.
+
+```js
+function cal(func, num){
+    return func(num)
+}
+function increase(num){
+    return num+1
+}
+function decrease(num){
+    return num-1
+}
+console.log(cal(increase, 1));  //  2
+console.log(cal(decrease, 1));  //  0
+```
+
+함수는 함수의 리턴 값으로도 사용할 수 있음
+
+```js
+function cal(mode){
+    var funcs = {
+        'plus' : function(left, right){return left + right},
+        'minus' : function(left, right){return left - right}
+    }
+    return funcs[mode];
+}
+console.log(cal('plus')(2,1));  // 3
+console.log(cal('minus')(2,1)); // 1 
+```
+
+배열의 값으로도 사용될 수 있음.
+
+```js
+var process = [
+    function(input){ return input + 10;},
+    function(input){ return input * input;},
+    function(input){ return input / 2;}
+];
+var input = 1;
+for(var i = 0; i < process.length; i++){
+    input = process[i](input);
+}
+console.log(input); //  60.5
+```
+
+콜백 : 어떠한 함수가 수신하는 인자
+
+```js
+function sortNumber(a,b){
+    return a-b;
+}
+var numbers = [20, 10, 9,8,7,6,5,4,3,2,1];
+console.log(numbers.sort(sortNumber));  // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
+```
+
+여기서 sortNumber는 콜백(callback) 함수가 되게됨
+
+콜백은 비동기처리(Ajax)에서도 유용하게 사용됨.<br>
+시간이 오래걸리는 작업이 있을 때 이 작업이 완료된 후에 처리해야 할일을 콜백으로 지정하면 해당 작업이 끝났을 때 미리 등록한 작업을 실행할 수 있음.
