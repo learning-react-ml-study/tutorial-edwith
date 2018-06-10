@@ -138,3 +138,82 @@ console.log(numbers.sort(sortNumber));  // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20]
 
 콜백은 비동기처리(Ajax)에서도 유용하게 사용됨.<br>
 시간이 오래걸리는 작업이 있을 때 이 작업이 완료된 후에 처리해야 할일을 콜백으로 지정하면 해당 작업이 끝났을 때 미리 등록한 작업을 실행할 수 있음.
+
+# 클로저 (closure)
+
+클로저는 내부함수가 외부함수의 맥락(contect)에 접근할 수 있는 것을 가르킴
+
+##### 내부함수
+
+자바스크립트는 함수 안에서 또 다른 함수를 선언 가능함.
+
+```js
+function outter(){
+    function inner(){
+        var title = 'coding everybody'; 
+        console.log(title); // coding everybody
+    }
+    inner();
+}
+outter();
+```
+
+내부함수는 외부함수의 지역변수에 접급할 수 있음.
+
+```js
+function outter(){
+    var title = 'coding everybody';  
+    function inner(){        
+        console.log(title); // coding everybody
+    }
+    inner();
+}
+outter();
+```
+
+위의 예제는 내부함수 inner에서 title을 호출했을때 외부함수인 outter의 지역변수에 접근할 수 있음을 보여줌.
+
+내부함수는 외부함수의 지역변수에 접근할 수 있는데 외부함수의 실행이 끝나서 외부함수가 소멸된 이후에도 내부함수가 외부함수의 변수에 접근할 수 있음.<br>
+이러한 메커니즘을 클로저라고 함.
+
+```js
+function outter(){
+    var title = 'coding everybody';  
+    return function(){        
+        console.log(title); // coding everybody
+    }
+}
+inner = outter();
+inner();
+```
+
+*클로저란 내부함수가 외부함수의 지역변수에 접근할 수 있고 외부함수는 외부함수의 지역변수를 사용하는 내부함수가 소멸될 때까지 소멸되지 않는 특성을 의미함*
+
+```js
+function factory_movie(title){
+    return {
+        get_title : function (){
+            return title;
+        },
+        set_title : function(_title){
+            title = _title
+        }
+    }
+}
+ghost = factory_movie('Ghost in the shell');
+matrix = factory_movie('Matrix');
+ 
+console.log(ghost.get_title()); // Ghost in the shell
+console.log(matrix.get_title());    // Matrix
+ 
+ghost.set_title('공각기동대');
+ 
+console.log(ghost.get_title()); // 공각기동대
+console.log(matrix.get_title()); // Matrix
+```
+
+클로저의 응용으로 private variable이 가능.
+
+private variable은 여기서는 factory_movie함수의 title임.
+
+*Private 속성은 객체의 외부에서는 접근 할 수 없는 외부에 감춰진 속성이나 메소드를 의미함. 이를 통해서 객체의 내부에서만 사용해야 하는 값이 노출됨으로서 생길 수 있는 오류를 줄일 수 있음. 자바와 같은 언어에서는 이러한 틀성을 언어 문법 차원에서 지원하고 있음*
