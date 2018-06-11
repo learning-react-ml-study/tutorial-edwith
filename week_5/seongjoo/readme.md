@@ -269,3 +269,37 @@ two('val1');  // two.length 2 arguments 1
 arguments.length는 함수로 전달된 실제 인자의 수를 의미하고, 함수.length는 함수에 정의된 인자의 수를 의미함.
 
 참고링크 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/arguments
+
+# 함수의 호출
+
+
+```js
+function func(){
+}
+func();
+```
+
+함수를 호출하는 가장 기본적인 방법
+
+```js
+function sum(arg1, arg2){
+    return arg1+arg2;
+}
+console.log(sum.apply(null, [1,2])) // 3
+```
+
+Function.apply와 Function.call로 함수를 호출 할 수 있음.
+
+```js
+o1 = {val1:1, val2:2, val3:3}
+o2 = {v1:10, v2:50, v3:100, v4:25}
+function sum(){
+    var _sum = 0;
+    for(name in this){
+        _sum += this[name];
+    }
+    return _sum;
+}
+console.log(sum.apply(o1)) // 6
+console.log(sum.apply(o2)) // 185
+```
