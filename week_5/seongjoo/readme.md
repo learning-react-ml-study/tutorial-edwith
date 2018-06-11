@@ -319,3 +319,76 @@ console.log(sum.apply(o2)) // 185
 정보의 은닉화 (Information Hiding), 캡슐화(Encapsulation) : 내부의 동작 방법을 단단한 케이스 안에 숨기고 사용자에게는 그 부품의 사용방법만을 노출하고 있는 것. 사용자에게는 그 부품을 사용하는 방법이 중요한 것이 됨.
 
 인터페이스란 이질적인 것들이 결합하는 것을 막하주는 역할. 부품들 간의 약속
+
+# 생성자와 new
+
+객체란 서로 연관된 변수와 함수를 그룹핑한 그릇이라고 할 수 있음. 객체 내의 변수를 프로퍼티(property) 함수를 메소드(method)라고 부름
+
+Javascript - Prototype-based Programming
+
+```js
+var person = {}
+person.name = 'egoing';
+person.introduce = function(){
+    return 'My name is '+this.name;
+}
+console.log(person.introduce());    // My name is egoing
+```
+
+```js
+var person = {
+    'name' : 'egoing',
+    'introduce' : function(){
+        return 'My name is '+this.name;
+    }
+}
+console.log(person.introduce());    //  My name is egoing
+```
+
+생성자(constructor)는 객체를 만드는 역할을 하는 함수. 자바스크립트에서 함수는 객체를 만드는 창조자라고 할 수 있음.
+
+함수에 new를 붙이는 것을 통해서 객체를 만들 수 있음.
+
+```js
+function Person(){}
+var p = new Person();
+p.name = 'egoing';
+p.introduce = function(){
+    return 'My name is '+this.name; 
+}
+console.log(p.introduce()); //  My name is egoing
+```
+
+```js
+function Person(){}
+var p1 = new Person();
+p1.name = 'egoing';
+p1.introduce = function(){
+    return 'My name is '+this.name; 
+}
+console.log(p1.introduce());    // My name is egoing
+ 
+var p2 = new Person();
+p2.name = 'leezche';
+p2.introduce = function(){
+    return 'My name is '+this.name; 
+}
+console.log(p2.introduce());    // My name is leezche
+```
+
+```js
+function Person(name){
+    this.name = name;
+    this.introduce = function(){
+        return 'My name is '+this.name; 
+    }   
+}
+var p1 = new Person('egoing');  // My name is egoing
+console.log(p1.introduce());
+ 
+var p2 = new Person('leezche'); // My name is leezche
+console.log(p2.introduce());
+```
+
+객체에 대한 초기화(init)를 통해서 코드의 재활용성을 높임.
+
