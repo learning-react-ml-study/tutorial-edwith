@@ -217,3 +217,55 @@ console.log(matrix.get_title()); // Matrix
 private variable은 여기서는 factory_movie함수의 title임.
 
 *Private 속성은 객체의 외부에서는 접근 할 수 없는 외부에 감춰진 속성이나 메소드를 의미함. 이를 통해서 객체의 내부에서만 사용해야 하는 값이 노출됨으로서 생길 수 있는 오류를 줄일 수 있음. 자바와 같은 언어에서는 이러한 틀성을 언어 문법 차원에서 지원하고 있음*
+
+# arguments
+
+함수에는 arguments라는 변수에 담긴 숨겨진 유사 배열이 있음. 이 배열에는 함수를 호출할 때 입력한 인자가 담겨 있음.
+
+```js
+function sum(){
+    var _sum = 0;    
+    for(var i = 0; i < arguments.length; i++){
+        console.log(i+' : '+arguments[i]);
+        _sum += arguments[i];
+    }   
+    return _sum;
+}
+console.log('result : ' + sum(1,2,3,4));
+```
+
+결과
+
+0 : 1
+1 : 2
+2 : 3
+3 : 4
+result : 10
+
+```js
+function zero(){
+    console.log(
+        'zero.length', zero.length,
+        'arguments', arguments.length
+    );
+}
+function one(arg1){
+    console.log(
+        'one.length', one.length,
+        'arguments', arguments.length
+    );
+}
+function two(arg1, arg2){
+    console.log(
+        'two.length', two.length,
+        'arguments', arguments.length
+    );
+}
+zero(); // zero.length 0 arguments 0 
+one('val1', 'val2');  // one.length 1 arguments 2 
+two('val1');  // two.length 2 arguments 1
+```
+
+arguments.length는 함수로 전달된 실제 인자의 수를 의미하고, 함수.length는 함수에 정의된 인자의 수를 의미함.
+
+참고링크 : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/arguments
