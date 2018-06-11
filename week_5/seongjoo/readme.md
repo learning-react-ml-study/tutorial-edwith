@@ -425,5 +425,7 @@ window.o.func();
 Hello?
 Hello?
 
+자바스크립트에서 모든 객체는 기본적으로 전역객체의 프로퍼티임
+
 웹브라우저에서 전역객체 : window <br>
 node.js의 전역객체 : global
