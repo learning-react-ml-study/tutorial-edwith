@@ -392,3 +392,38 @@ console.log(p2.introduce());
 
 객체에 대한 초기화(init)를 통해서 코드의 재활용성을 높임.
 
+# 전역객체
+
+전역객체(Global object) -  모든 객체는 전역객체의 프로퍼티
+
+```js
+function func(){
+    console.log('Hello?');    
+}
+func();
+window.func();
+```
+
+결과
+
+Hello?
+Hello?
+
+모든 전역변수와 함수는 window 객체의 프로퍼티.<br>
+명시하지 않으면 암시적으로 window의 프로퍼티로 간주됨
+
+```js
+var o = {'func':function(){
+    console.log('Hello?');
+}}
+o.func();
+window.o.func();
+```
+
+결과
+
+Hello?
+Hello?
+
+웹브라우저에서 전역객체 : window <br>
+node.js의 전역객체 : global
