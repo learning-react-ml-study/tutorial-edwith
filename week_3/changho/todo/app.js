@@ -36,7 +36,7 @@ function getTodos() {
         span.className = "todo-item"
         // text node 더하기
         let spanWithText = span.appendChild(document.createTextNode(todo));
-        li.appendChild(spanWithText);
+        li.appendChild(span);
         // button 추가
         const deleteBtn = document.createElement('button');
         deleteBtn.className = 'delete'
