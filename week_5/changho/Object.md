@@ -4,19 +4,20 @@
 
 ## 크로스 플랫폼에서 염두할 점 
 브라우저와 node.js 에는 전역객체를 참조하는 전역 변수가 있지만 두 객체는 서로 다르다. 
-- 브라우저에서 사용하는 전역객체는 window 
+- 브라우저에서 사용하는 전역객체는 window --> window 객체는 DOM 문서를 포함한 브라우처의 창을 나타냅니다
 - node.js에서 사용하는 전역객체는 global
-
+- 브라우저와 노드의 다른점 : 노드의 전역 에서 `var something` 식으로 선언해도 그 변수는 지역변수가 된다.
+- 그러므로 노드에서 아래와 같은 코드가 작동하지 않는다 
 ```javascript
-// node 실행 환경 
+// node 
 var foo = 123
 function func() {
-    console.log(global.foo);
-    console.log(foo)
+    console.log(global.foo); // undefined
+    console.log(foo);  // 123
 }
-func(); // 123 123 
-global.func() // 123 123
+func();
 ```
+
 ```javascript
 // 브라우저 실행
 var foo1 = 123
@@ -24,7 +25,7 @@ function func() {
     console.log(window.foo1)
     console.log(foo)
 }
-window.func() // 123 123
+
 func() // 123 123
 ```
 모둔 객체와 함수는 전역 객체의 속성인 것을 알 수 있다. 
@@ -54,3 +55,8 @@ if(!window.something) {
 
 
 [지혜로우신 mdn](https://developer.mozilla.org/en-US/docs/Glossary/Global_object)
+
+> for 문 내에서 변수는 지역변수가 아니라 전역변수로 취급된다. 
+> 렉시컬 스코프 : 정적 유효범위 --> 
+
+> OOP: 필요한 부분한 부품화 --> 추상화
