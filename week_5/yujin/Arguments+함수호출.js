@@ -1,7 +1,7 @@
 ◆ Arguments ◆ 
 
 function sum(){
-	var i, _sum=0;
+  var i, _sum=0;
   for(i=0; i<arguments.length; i++) {
       document.write(i+' : '+arguments[i])+'<br />') ;
       _sum+=arguments[i];
@@ -71,6 +71,6 @@ alert(sum.apply(o2))
 
 apply를 통해 this값을 o1에 부여하여 o1객체의 속성인 것처럼 동작: 
 o1={val1:1, val2:2, val3:3, sum:sum}
-o2={v1:10, v2:50, v3:100, v4:25, sum=sum}
+o2={v1:10, v2:50, v3:100, v4:25, sum:sum}
 와 동일한 의미로 o1.sum, o2.sum으로 메서드 구현
 ※위를 실행하면 sum에 sum이라는 함수도 더해진 결과값이 나옴
