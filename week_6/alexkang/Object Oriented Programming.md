@@ -37,5 +37,27 @@
 
     `document.write(p2.introduce());`
 
-  * 
+* 전역객체 - window
+
+  * `function` `func(){`
+
+    `    ``alert(``'Hello?'``);    `
+
+    `}`
+
+    `func();`
+
+    `window.func();`
+
+  * `var` `o = {``'func'``:``function``(){`
+
+    `    ``alert(``'Hello?'``);`
+
+    `}}`
+
+    `o.func();`
+
+    `window.o.func();`
+
+  * 모든 전역변수와 함수는 사실 window 객체의 프로퍼티다. 객체를 명시하지 않으면 암시적으로 window의 프로퍼티로 간주된다.
 
