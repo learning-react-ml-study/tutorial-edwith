@@ -180,3 +180,38 @@ prototype은 객체와 객체를 연결하는 체인의 역할을 하게됨. 이
 
 https://github.com/seongjoojin/learning_JS-_Flow/tree/master/06-prototype
 
+# 표준 내장 객체의 확장
+
+표준 내장 객체(Standard Built-in Object)는 자바스크립트가 기본적으로 가지고 있는 객체들을 의미함.<br>
+내장 객체가 중요한 이유는 프로그래밍을 하는데 기본적으로 필요한 도구들이기 때문임.
+
+자바스크립트 내장 객체
+
+- Object
+- Function
+- Array
+- String
+- Boolean
+- Math
+- Date
+- RegExp
+
+```js
+var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
+function getRandomValueFromArray(haystack){
+    var index = Math.floor(haystack.length*Math.random());
+    return haystack[index]; 
+}
+console.log(getRandomValueFromArray(arr));
+```
+
+배열에서 특정한 값을 랜덤하게 추출하는 코드.
+
+```js
+Array.prototype.rand = function(){
+    var index = Math.floor(this.length*Math.random());
+    return this[index];
+}
+var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
+console.log(arr.rand());
+```
