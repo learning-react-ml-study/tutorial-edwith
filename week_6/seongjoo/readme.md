@@ -180,6 +180,8 @@ prototype은 객체와 객체를 연결하는 체인의 역할을 하게됨. 이
 
 https://github.com/seongjoojin/learning_JS-_Flow/tree/master/06-prototype
 
+http://www.nextree.co.kr/p7323/
+
 # 표준 내장 객체의 확장
 
 표준 내장 객체(Standard Built-in Object)는 자바스크립트가 기본적으로 가지고 있는 객체들을 의미함.<br>
@@ -215,3 +217,32 @@ Array.prototype.rand = function(){
 var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
 console.log(arr.rand());
 ```
+
+# Object
+
+Object 객체는 객체의 가장 기본적인 형태를 가진 객체.<br>
+아무것도 상속받지 않는 순수한 객체임.<br>
+자바스크립트에서는 값을 저장하는 기본적인 단위로 Object를 사용함.
+
+모든 객체는 Object 객체의 프로퍼티를 가지고 있음. (자바스크립트의 모든 객체는 Object 객체를 상속받음)
+
+Object 객체를 확장하면 모든 객체가 접근할 수 있는 API를 만들 수 있음.
+
+```js
+Object.prototype.contain = function(neddle) {
+    for(var name in this){
+        if(this[name] === neddle){
+            return true;
+        }
+    }
+    return false;
+}
+var o = {'name':'egoing', 'city':'seoul'}
+console.log(o.contain('egoing'));   // true
+var a = ['egoing','leezche','grapittie'];
+console.log(a.contain('leezche'));  // true
+```
+contain 참고 - https://www.w3schools.com/jsref/jsref_includes.asp
+
+Object객체는 확장하지 않는 것이 바람직함. 왜냐하면 모든 객체에 영향을 주기 때문임.
+
