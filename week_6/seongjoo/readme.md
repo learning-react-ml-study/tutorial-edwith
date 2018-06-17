@@ -148,3 +148,35 @@ console.log(p1.coding());
 *   hello world
 * */
 ```
+
+# prototype
+
+prototype : 객체의 원형
+
+prototype에 저장된 속성들은 생성자를 통해서 만들어질 때 그 객체에 연결됨
+
+```js
+function Ultra(){}
+Ultra.prototype.ultraProp = true;
+ 
+function Super(){}
+Super.prototype = new Ultra();
+ 
+function Sub(){}
+Sub.prototype = new Super();
+ 
+var o = new Sub();
+console.log(o.ultraProp);   // true
+```
+
+생성자 Sub를 통해서 만들어진 객체 o가 Ultra의 프로퍼티 ultraProp에 접근 가능한 것은 prototype 체인으로 Sub와 Ultra가 연결되어 있기 때문임.
+
+1. 객체 o에서 ultraProp를 찾음
+2. 없다면 Sub.prototype.ultraProp를 찾음
+3. 없다면 Super.prototype.ultraProp를 찾음
+4. 없다면 Ultra.prototype.ultraProp를 찾음
+
+prototype은 객체와 객체를 연결하는 체인의 역할을 하게됨. 이러한 관계를 prototype chain이라고 함
+
+https://github.com/seongjoojin/learning_JS-_Flow/tree/master/06-prototype
+
