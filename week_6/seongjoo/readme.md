@@ -91,3 +91,60 @@ func.apply(p);
 
 함수의 메소드인 apply, call을 이용하면 this의 값을 제어 가능함.
 
+# 상속
+
+상속은 객체의 로직을 그대로 물려 받는 또 다른 객체를 만들 수 있는 기능을 의미함. <br>
+기존의 로직을 수정하고 변경해서 파생된 새로운 객체를 만들 수 있게 해줌
+
+```js
+function Person(name){
+    this.name = name;
+}
+Person.prototype.name=null;
+Person.prototype.introduce = function(){
+    return 'My name is '+this.name; 
+}
+ 
+function Programmer(name){
+    this.name = name;
+}
+Programmer.prototype = new Person();
+ 
+var p1 = new Programmer('egoing');
+console.log(p1.introduce());
+
+/*  result :
+*   My name is egoing
+* */
+```
+
+Programmer라는 생성자를 만들고 prototype과 Person의 객체를 연결하였더니 Programmer 객체도 메소드 introduce를 사용할 수 있게 됨.
+
+Programmer가 Person의 기능을 상속하고 있음.
+
+```js
+function Person(name){
+    this.name = name;
+}
+Person.prototype.name=null;
+Person.prototype.introduce = function(){
+    return 'My name is '+this.name; 
+}
+ 
+function Programmer(name){
+    this.name = name;
+}
+Programmer.prototype = new Person();
+Programmer.prototype.coding = function(){
+    return "hello world";
+}
+ 
+var p1 = new Programmer('egoing');
+console.log(p1.introduce());
+console.log(p1.coding());
+
+/*  result :
+*   My name is egoing
+*   hello world
+* */
+```
