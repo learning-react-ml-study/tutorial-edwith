@@ -246,3 +246,38 @@ contain 참고 - https://www.w3schools.com/jsref/jsref_includes.asp
 
 Object객체는 확장하지 않는 것이 바람직함. 왜냐하면 모든 객체에 영향을 주기 때문임.
 
+# 데이터타입
+
+데이터 타입 : 데이터의 형태
+
+데이터 타입은 두가지로 구분됨 (객체/객체가 아닌 것)
+
+객체가 아닌 것 - 원시 데이터 타입(primitive type)
+
+- 숫자
+- 문자열
+- 불리언(true/false)
+- null
+- undefined
+
+```js
+var str = 'coding';
+console.log(str.length);    // 6
+console.log(str.charAt(0));     // c
+```
+
+내부적으로 문자열이 원시 데이터 타입이고 문자열과 관련된 어떤 작업을 하려고 할 때 자바스크립트는 임시로 문자열 객체를 만들고 사용이 끝나면 제거하기 때문에 문자열은 객체가 아니게 됨.<br>이러한 처리는 내부적으로 일어남
+
+```js
+var str = 'coding';
+str.prop = 'everybody';
+console.log(str.prop);  // undefined
+```
+
+st.prop를 하는 순간에 자바스크립 내부적으로 String 객체가 만들어짐.<br>
+prop 프로퍼티는 이 객체에 저장되고 이 객체는 곧 제거됨<br>
+그렇기 때문에 prop라는 속성이 저장된 객체는 존재하지 않게됨
+
+문자열과 관련해서 필요한 기능성을 객체지향적으로 제공하는 필요 또한 있기 때문에 원시 데이터형을 객체처럼 다룰 수 있도록 하기 위한 객체를 자바스크립트는 제공하고 있는데 그것이 레퍼객체(wrapper object)임.
+
+레퍼객체로는 String, Number, Boolean이 있음. null과 undefined는 레퍼 객체가 존재하지 않음.
