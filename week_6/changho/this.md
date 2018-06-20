@@ -22,7 +22,7 @@ whatIsthis() // window
 
 function person() {
     this.person = 'colt';
-	console.log(this.person);
+	console.log(this); // window 객체
 }
 person() // colt 
 ```
