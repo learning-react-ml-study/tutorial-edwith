@@ -92,11 +92,11 @@ Dog.prototype = new Animal()
 var d = new Dog();
 d.walk() // 걷는다
 ```
-Animal 객쳉서 walk 메소드가 찾아지므로 검색은 종료되지만 발견되지 않는 경우에는 한층 더 위의 프로토타입(최상위의 Object.prototype까지)으로 거슬러 올라가게 된다. 이것 처럼 프로토타입에 인스턴스를 설정함으로서 인스턴스끼리 참조 하에 서로 연결되어 상속 관계를 할 수 있다. 이런 프로토타입의 연결을 프로토타입 체인이라고 한다. 
+Animal 객체에서 walk 메소드가 찾아지므로 검색은 종료되지만 발견되지 않는 경우에는 한층 더 위의 프로토타입(최상위의 Object.prototype까지)으로 거슬러 올라가게 된다. 이것 처럼 프로토타입에 인스턴스를 설정함으로서 인스턴스끼리 참조 하에 서로 연결되어 상속 관계를 할 수 있다. 이런 프로토타입의 연결을 프로토타입 체인이라고 한다. 
 
 ```javascript
 function Person(firstName, lastName, favoriteColor, favoriteNumber, family) {
-    this.firstName = firstName;
+    this.firstName  = firstName;
     this.lastName = lastName;
     this.favoriteColor = favoriteColor;
     this.favoriteNumber = favoriteNumber;
@@ -129,3 +129,8 @@ String.prototype.reverse = function(){
   return newStr;
 }
 ```
+
+
+# Object.method VS Object.prototype.method
+prototype은 속성의 메소드로 사용, 
+ Object.method는 최상위 생성자 함수로서 인자로 그 객체 자신을 사용
