@@ -81,7 +81,7 @@ var me = {
     name: 'lee chang ho'
 }
 
-var you = {
+var you = { 
     name: 'ho seung'
 }
 sayHello.call(me) // hi lee chang ho
