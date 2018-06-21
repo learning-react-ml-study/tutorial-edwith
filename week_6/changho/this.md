@@ -22,7 +22,7 @@ whatIsthis() // window
 
 function person() {
     this.person = 'colt';
-	console.log(this.person);
+	console.log(this); // window 객체
 }
 person() // colt 
 ```
@@ -41,11 +41,13 @@ var manObj = {
     determine: function() {
         console.log(this === manObj)
         return this === manObj;
-    }
+    },
+    whatIsThis: this  // 
 }
 
 manObj.sayHi()  // hi changhao
 manObj.determine() // true
+manObj.whatIsThis // Window 객체 (함수로서 실행이 되지 않았다. )
 ```
 - 객체 내부 메소드 안에서의 this는 선언된 부모객체를 가르킨다. (실행될때 정의된다) 
 - 가장 가까운 부모 객체를 가르킴
@@ -54,7 +56,7 @@ manObj.determine() // true
 // 연습문제 
 var person = {
     firstName: 'kim',
-    determine: this;
+    determine: this 
 }
 // this는 무엇을 가르킬까?
 // 함수가 실행되지 않았고 즉 정의되지 않았다. 
