@@ -43,11 +43,11 @@ mySet.forEach(function(v){
 });
 //출력 결과 : 1,2,3,4,5
 ~~~
-set.size 구문은 set 안에 담겨 있는 데이터의 개수를 조회합니다.
-set.has(value) 구문은 주어진 값이 set 안에 존재할 경우 true 를 리턴합니다.
-set.add(value) 구문은 주어진 값을 set 에 추가합니다. 만약 그 값이 이미 set 안에 존재하면 아무 일도 일어나지 않습니다.
-set.delete(value) 구문은 set 에서 주어진 값을 제거합니다. 만약 그 값이 set 안에 존재하지 않으면 아무 일도 일어나지 않습니다. .add() 구문과 .delete() 구문은 모두 set 객체 자신을 리턴합니다. 따라서 구문을 체인(chain) 시킬 수 있습니다.
-set[Symbol.iterator]() 구문은 set 안의 값들을 순회할 수 있는 새로운 이터레이터를 리턴합니다. 보통의 경우 이 메소드를 직접 호출할 일은 없습니다. 하지만 이 메소드의 존재 때문에 set 은 이터러블(iterable) 합니다. 즉, for (v of set) {...} 같은 구문을 쓸 수 있습니다.
+set.size 구문은 set 안에 담겨 있는 데이터의 개수를 조회합니다.</br>
+set.has(value) 구문은 주어진 값이 set 안에 존재할 경우 true 를 리턴합니다.</br>
+set.add(value) 구문은 주어진 값을 set 에 추가합니다. 만약 그 값이 이미 set 안에 존재하면 아무 일도 일어나지 않습니다.</br>
+set.delete(value) 구문은 set 에서 주어진 값을 제거합니다. 만약 그 값이 set 안에 존재하지 않으면 아무 일도 일어나지 않습니다. .add() 구문과 .delete() 구문은 모두 set 객체 자신을 리턴합니다. 따라서 구문을 체인(chain) 시킬 수 있습니다.</br>
+set[Symbol.iterator]() 구문은 set 안의 값들을 순회할 수 있는 새로운 이터레이터를 리턴합니다. 보통의 경우 이 메소드를 직접 호출할 일은 없습니다. 하지만 이 메소드의 존재 때문에 set 은 이터러블(iterable) 합니다. 즉, for (v of set) {...} 같은 구문을 쓸 수 있습니다.</br>
 ~~~javascript
 let arr = [1,1,2,3,4,5];
 let mySet = new Set(arr);  
