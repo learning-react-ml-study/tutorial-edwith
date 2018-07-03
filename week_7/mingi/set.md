@@ -93,3 +93,4 @@ ws.forEach(function(v){
 });
 */
 ~~~
+출처 : http://hacks.mozilla.or.kr/2015/12/es6-in-depth-collections/
