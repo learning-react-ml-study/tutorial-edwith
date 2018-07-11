@@ -93,5 +93,9 @@ ws.forEach(function(v){
 });
 */
 ~~~
+<<<<<<< HEAD
 
 출처 : http://hacks.mozilla.or.kr/2015/12/es6-in-depth-collections/
+=======
+출처 : http://hacks.mozilla.or.kr/2015/12/es6-in-depth-collections/
+>>>>>>> 03977e895eace88c793fa30efa471bd8eb3fab44
